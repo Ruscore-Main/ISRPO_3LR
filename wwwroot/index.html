@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script src="script.js"></script>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Список товаров</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body onload="InitialFunction();" class="container-sm">
+    <h2>Список товаров</h2>
+    <form name="productForm" method="post">
+        <input type="hidden" name="id" value="0" />
+
+        <div class="form-group col-md-5 mb-5">
+            <label for="name">Наименование:</label>
+            <input class="form-control" name="name" />
+
+        </div>
+        <div class="form-group col-md-5 mb-5">
+            <label for="countOfStars">Дата завоза:</label>
+            <input class="form-control" name="dateDelivery" type="datetime" />
+
+        </div>
+        <div class="form-group col-md-5 mb-5">
+            <label for="countryCode">Стоимость:</label>
+            <input class="form-control" name="price" />
+
+        </div>
+        <div class="form-group col-md-5 mb-5">
+            <label for="amount">Количество:</label>
+            <input class="form-control" name="amount" type="number" />
+
+        </div>
+        <div class="form-group col-md-5 mb-5">
+            <label for="countryCode">url изображение:</label>
+            <input class="form-control" name="image" />
+
+        </div>
+        <div class="panel-body mb-5 text-center">
+            <button type="submit" id="submit" class="btn btn-success">Сохранить</button>
+            <a id="reset" class="btn btn-danger">Сбросить</a>
+
+        </div>
+
+    </form>
+    <table class="table table-condensed table-striped">
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Наименование</th>
+                <th>Дата завоза</th>
+                <th>Стоимость</th>
+                <th>Кол-во</th>
+                <th>Изображение</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+    </table>
+
+    <script src="mainscript.js"></script>
+</body>
+</html>
